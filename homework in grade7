@@ -1,0 +1,32 @@
+import turtle
+
+__Pen = turtle.Pen()
+
+
+__Pen.speed(50)
+turtle.bgcolor("#000000")
+__Pen.pensize(3)
+__Pen.pencolor("#ffff66")
+__Pen.fillcolor("#ff0000")
+__Pen.begin_fill()
+__Pen.circle(60)
+__Pen.end_fill()
+__Pen.sety(60)
+for __count in range(12):
+    __Pen.circle(30, steps=4)
+    __Pen.left(30)
+__Pen.sety(20)
+__Pen.fillcolor("#ffffff")
+__Pen.begin_fill()
+__Pen.circle(40)
+__Pen.end_fill()
+__Pen.sety(100)
+__Pen.setheading((-60))
+__Pen.fillcolor("#ffff00")
+__Pen.begin_fill()
+for __count in range(6):
+    __Pen.forward(23)
+    __Pen.left(60)
+    __Pen.forward(23)
+    __Pen.right(120)
+__Pen.end_fill()
